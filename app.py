@@ -22,8 +22,8 @@ FEATURES = [
 ]
 
 app = FastAPI(
-    title="House Price Prediction API",
-    version="1.0.0",
+    title="Git Branch House Price Prediction API",
+    version="1.2.0",
 )
 
 
@@ -32,6 +32,7 @@ class HouseInput(BaseModel):
     bedrooms: float = Field(ge=0, le=100, examples=[3])
     bathrooms: float = Field(ge=0, le=100, examples=[2])
     house_age: float = Field(ge=0, le=200, examples=[10])
+    
 
 
 @app.get("/")
